@@ -312,22 +312,30 @@
 
 
 <!--div class="container" ТУТ Галерея-->
-                       <div> <img src="assets/img/n1.png" width="40%" class="photo">  <img src="assets/img/n2.png" width="40%" class="photo"><br><br><br><img src="assets/img/n3.png" width="40%" class="photo"><img src="assets/img/n4.png" width="40%" class="photo"><br><br><br><img src="assets/img/n5.png" width="40%" class="photo">
-                       
-                       </div>
-           <style>
+                     
+
+<div class="photos">
+  <img src="assets/img/n1.png" class="photo">
+  <img src="assets/img/n2.png" class="photo">
+  
+  <img src="assets/img/n3.png" class="photo">
+  <img src="assets/img/n4.png" class="photo">
+
+  <img src="assets/img/n5.png" class="photo">
+</div>
+
+<style>
   .photos {
     display: flex;
-    flex-wrap: wrap;      /* Разрешаем перенос на новую строку */
-    gap: 30px;            /* <-- ОТСТУПЫ между всеми фото */
+    flex-wrap: wrap;       /* перенос строк */
+    gap: 30px;             /* расстояние между фото */
   }
 
   .photo {
+    width: calc(50% - 30px);  /* две фотографии в ряд с отступом между ними */
     display: block;
   }
 </style>
-
-
 
        
         <!-- Bootstrap core JS-->
