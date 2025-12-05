@@ -312,13 +312,23 @@
 
 
 <!--div class="container" ТУТ Галерея-->
-                       <div> <img src="assets/img/n1.png" width="40%">  <img src="assets/img/n2.png" width="40%"><br><br><br><img src="assets/img/n3.png" width="40%"><img src="assets/img/n4.png" width="40%"><br><br><br><img src="assets/img/n5.png" width="40%">
+                       <div> <img src="assets/img/n1.png" width="40%" class="photo">  <img src="assets/img/n2.png" width="40%" class="photo"><br><br><br><img src="assets/img/n3.png" width="40%" class="photo"><img src="assets/img/n4.png" width="40%" class="photo"><br><br><br><img src="assets/img/n5.png" width="40%" class="photo">
                        
                        </div>
+           <style>
+  .photo {
+    margin-right: 5%; /* Расстояние между фотографиями в ряду */
+    margin-bottom: 20px; /* Расстояние снизу (если нужно между рядами) */
+  }
+
+  /* Чтобы последняя фотография в ряду не имела правого отступа */
+  .photo:nth-child(2n) {
+    margin-right: 0;
+  }
+</style>
 
 
-         
-        </div>
+       
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
