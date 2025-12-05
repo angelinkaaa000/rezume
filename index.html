@@ -316,16 +316,17 @@
                        
                        </div>
            <style>
-  .photo {
-    margin-right: 5%; /* Расстояние между фотографиями в ряду */
-    margin-bottom: 20px; /* Расстояние снизу (если нужно между рядами) */
+  .photos {
+    display: flex;
+    flex-wrap: wrap;      /* Разрешаем перенос на новую строку */
+    gap: 30px;            /* <-- ОТСТУПЫ между всеми фото */
   }
 
-  /* Чтобы последняя фотография в ряду не имела правого отступа */
-  .photo:nth-child(2n) {
-    margin-right: 0;
+  .photo {
+    display: block;
   }
 </style>
+
 
 
        
